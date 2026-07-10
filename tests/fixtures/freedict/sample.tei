@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt><title>Fixture English–Urdu</title></titleStmt>
+      <editionStmt><edition>1.0</edition></editionStmt>
+      <publicationStmt><availability><p>Fixture data licence for tests only.</p></availability></publicationStmt>
+    </fileDesc>
+  </teiHeader>
+  <text><body>
+    <entry xml:id="book">
+      <form type="lemma"><orth>book</orth><pron>bʊk</pron></form>
+      <gramGrp><pos>noun</pos></gramGrp>
+      <sense><cit type="trans"><quote>کتاب</quote></cit><cit type="example"><quote>This is a book.</quote></cit></sense>
+    </entry>
+    <entry xml:id="water">
+      <form type="lemma"><orth>water</orth></form>
+      <gramGrp><pos>noun</pos></gramGrp>
+      <sense><def>A transparent liquid.</def><cit type="trans"><quote>پانی</quote></cit></sense>
+    </entry>
+  </body></text>
+</TEI>

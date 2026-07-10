@@ -1,0 +1,29 @@
+schema_version: 1
+packs:
+  - id: fixture-wiktionary
+    title: Fixture Wiktionary
+    description: Test fixture
+    source_language: en
+    definition_language: en
+    license: CC-BY-SA-4.0
+    groups: [test]
+    smoke_tests: [book]
+    source: {type: wiktionary, url: fixture://wiktionary}
+  - id: fixture-freedict
+    title: Fixture FreeDict
+    description: Test fixture
+    source_language: en
+    definition_language: ur
+    license: Fixture
+    groups: [test]
+    smoke_tests: [book]
+    source: {type: freedict, dictionary_id: fixture}
+  - id: fixture-wordnet
+    title: Fixture WordNet
+    description: Test fixture
+    source_language: en
+    definition_language: en
+    license: WordNet-3.0
+    groups: [test]
+    smoke_tests: [book]
+    source: {type: wordnet, url: fixture://wordnet}

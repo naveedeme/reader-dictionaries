@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+work/
+dist/
+build/
+site/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.zip
+*.sha256
+.DS_Store

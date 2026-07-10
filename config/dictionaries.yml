@@ -1,0 +1,593 @@
+schema_version: 1
+repository: naveedeme/reader-dictionaries
+catalog_url: https://github.com/naveedeme/reader-dictionaries/releases/latest/download/catalog.json
+packs:
+- id: english-lite
+  title: English Lite
+  description: Small Simple English Wiktionary pack for fast offline definitions.
+  source_language: en
+  definition_language: en
+  license: CC-BY-SA-4.0
+  enabled: true
+  groups:
+  - core
+  - standard
+  - english
+  - wiktionary
+  smoke_tests:
+  - book
+  - water
+  source:
+    type: wiktionary
+    url: https://kaikki.org/simplewiktionary/raw-wiktextract-data.jsonl.gz
+    homepage: https://kaikki.org/simplewiktionary/
+- id: wordnet-en
+  title: Princeton WordNet 3.0
+  description: English definitions, synonyms, antonyms and semantic relations.
+  source_language: en
+  definition_language: en
+  license: WordNet-3.0
+  enabled: true
+  groups:
+  - core
+  - standard
+  - english
+  - wordnet
+  smoke_tests:
+  - book
+  - knowledge
+  source:
+    type: wordnet
+    url: https://wordnetcode.princeton.edu/3.0/WNdb-3.0.tar.gz
+    homepage: https://wordnet.princeton.edu/
+- id: wiktionary-ur-en
+  title: Urdu–English Wiktionary
+  description: Urdu headwords with English definitions and inflected forms.
+  source_language: ur
+  definition_language: en
+  license: CC-BY-SA-4.0
+  enabled: true
+  groups:
+  - core
+  - standard
+  - wiktionary
+  smoke_tests:
+  - کتاب
+  source:
+    type: wiktionary
+    url: https://kaikki.org/dictionary/Urdu/kaikki.org-dictionary-Urdu.jsonl
+    fallback_urls:
+    - https://kaikki.org/dictionary/raw-wiktextract-data.jsonl.gz
+    homepage: https://kaikki.org/dictionary/Urdu/
+- id: wiktionary-ar-en
+  title: Arabic–English Wiktionary
+  description: Arabic headwords with English definitions, forms and relations.
+  source_language: ar
+  definition_language: en
+  license: CC-BY-SA-4.0
+  enabled: true
+  groups:
+  - core
+  - standard
+  - wiktionary
+  smoke_tests:
+  - كتاب
+  source:
+    type: wiktionary
+    url: https://kaikki.org/dictionary/Arabic/kaikki.org-dictionary-Arabic.jsonl
+    fallback_urls:
+    - https://kaikki.org/dictionary/raw-wiktextract-data.jsonl.gz
+    homepage: https://kaikki.org/dictionary/Arabic/
+- id: wiktionary-hi-en
+  title: Hindi–English Wiktionary
+  description: Hindi headwords with English definitions and forms.
+  source_language: hi
+  definition_language: en
+  license: CC-BY-SA-4.0
+  enabled: true
+  groups:
+  - core
+  - standard
+  - wiktionary
+  smoke_tests:
+  - पानी
+  source:
+    type: wiktionary
+    url: https://kaikki.org/dictionary/Hindi/kaikki.org-dictionary-Hindi.jsonl
+    fallback_urls:
+    - https://kaikki.org/dictionary/raw-wiktextract-data.jsonl.gz
+    homepage: https://kaikki.org/dictionary/Hindi/
+- id: wiktionary-fa-en
+  title: Persian–English Wiktionary
+  description: Persian headwords with English definitions and forms.
+  source_language: fa
+  definition_language: en
+  license: CC-BY-SA-4.0
+  enabled: true
+  groups:
+  - core
+  - standard
+  - wiktionary
+  smoke_tests:
+  - کتاب
+  source:
+    type: wiktionary
+    url: https://kaikki.org/dictionary/Persian/kaikki.org-dictionary-Persian.jsonl
+    fallback_urls:
+    - https://kaikki.org/dictionary/raw-wiktextract-data.jsonl.gz
+    homepage: https://kaikki.org/dictionary/Persian/
+- id: wiktionary-es-en
+  title: Spanish–English Wiktionary
+  description: Spanish headwords with English definitions and forms.
+  source_language: es
+  definition_language: en
+  license: CC-BY-SA-4.0
+  enabled: true
+  groups:
+  - standard
+  - wiktionary
+  smoke_tests:
+  - libro
+  source:
+    type: wiktionary
+    url: https://kaikki.org/dictionary/Spanish/kaikki.org-dictionary-Spanish.jsonl
+    fallback_urls:
+    - https://kaikki.org/dictionary/raw-wiktextract-data.jsonl.gz
+    homepage: https://kaikki.org/dictionary/Spanish/
+- id: wiktionary-fr-en
+  title: French–English Wiktionary
+  description: French headwords with English definitions and forms.
+  source_language: fr
+  definition_language: en
+  license: CC-BY-SA-4.0
+  enabled: true
+  groups:
+  - standard
+  - wiktionary
+  smoke_tests:
+  - livre
+  source:
+    type: wiktionary
+    url: https://kaikki.org/dictionary/French/kaikki.org-dictionary-French.jsonl
+    fallback_urls:
+    - https://kaikki.org/dictionary/raw-wiktextract-data.jsonl.gz
+    homepage: https://kaikki.org/dictionary/French/
+- id: wiktionary-de-en
+  title: German–English Wiktionary
+  description: German headwords with English definitions and forms.
+  source_language: de
+  definition_language: en
+  license: CC-BY-SA-4.0
+  enabled: true
+  groups:
+  - standard
+  - wiktionary
+  smoke_tests:
+  - Buch
+  source:
+    type: wiktionary
+    url: https://kaikki.org/dictionary/German/kaikki.org-dictionary-German.jsonl
+    fallback_urls:
+    - https://kaikki.org/dictionary/raw-wiktextract-data.jsonl.gz
+    homepage: https://kaikki.org/dictionary/German/
+- id: wiktionary-tr-en
+  title: Turkish–English Wiktionary
+  description: Turkish headwords with English definitions and forms.
+  source_language: tr
+  definition_language: en
+  license: CC-BY-SA-4.0
+  enabled: true
+  groups:
+  - standard
+  - wiktionary
+  smoke_tests:
+  - kitap
+  source:
+    type: wiktionary
+    url: https://kaikki.org/dictionary/Turkish/kaikki.org-dictionary-Turkish.jsonl
+    fallback_urls:
+    - https://kaikki.org/dictionary/raw-wiktextract-data.jsonl.gz
+    homepage: https://kaikki.org/dictionary/Turkish/
+- id: wiktionary-en-full-a-d
+  logical_id: wiktionary-en-full
+  title: English Wiktionary Full — A–D
+  description: Full English Wiktionary shard for A–D; install all seven shards for complete coverage.
+  source_language: en
+  definition_language: en
+  license: CC-BY-SA-4.0
+  enabled: true
+  groups:
+  - large
+  - english
+  - wiktionary
+  - english-full
+  smoke_tests: []
+  shard:
+    index: 1
+    count: 7
+    label: A–D
+  headword_shard:
+    initials: abcd
+  source: &id001
+    type: wiktionary
+    url: https://kaikki.org/dictionary/English/kaikki.org-dictionary-English.jsonl
+    fallback_urls:
+    - https://kaikki.org/dictionary/raw-wiktextract-data.jsonl.gz
+    homepage: https://kaikki.org/dictionary/English/
+- id: wiktionary-en-full-e-h
+  logical_id: wiktionary-en-full
+  title: English Wiktionary Full — E–H
+  description: Full English Wiktionary shard for E–H; install all seven shards for complete coverage.
+  source_language: en
+  definition_language: en
+  license: CC-BY-SA-4.0
+  enabled: true
+  groups:
+  - large
+  - english
+  - wiktionary
+  - english-full
+  smoke_tests: []
+  shard:
+    index: 2
+    count: 7
+    label: E–H
+  headword_shard:
+    initials: efgh
+  source: *id001
+- id: wiktionary-en-full-i-l
+  logical_id: wiktionary-en-full
+  title: English Wiktionary Full — I–L
+  description: Full English Wiktionary shard for I–L; install all seven shards for complete coverage.
+  source_language: en
+  definition_language: en
+  license: CC-BY-SA-4.0
+  enabled: true
+  groups:
+  - large
+  - english
+  - wiktionary
+  - english-full
+  smoke_tests: []
+  shard:
+    index: 3
+    count: 7
+    label: I–L
+  headword_shard:
+    initials: ijkl
+  source: *id001
+- id: wiktionary-en-full-m-p
+  logical_id: wiktionary-en-full
+  title: English Wiktionary Full — M–P
+  description: Full English Wiktionary shard for M–P; install all seven shards for complete coverage.
+  source_language: en
+  definition_language: en
+  license: CC-BY-SA-4.0
+  enabled: true
+  groups:
+  - large
+  - english
+  - wiktionary
+  - english-full
+  smoke_tests: []
+  shard:
+    index: 4
+    count: 7
+    label: M–P
+  headword_shard:
+    initials: mnop
+  source: *id001
+- id: wiktionary-en-full-q-t
+  logical_id: wiktionary-en-full
+  title: English Wiktionary Full — Q–T
+  description: Full English Wiktionary shard for Q–T; install all seven shards for complete coverage.
+  source_language: en
+  definition_language: en
+  license: CC-BY-SA-4.0
+  enabled: true
+  groups:
+  - large
+  - english
+  - wiktionary
+  - english-full
+  smoke_tests: []
+  shard:
+    index: 5
+    count: 7
+    label: Q–T
+  headword_shard:
+    initials: qrst
+  source: *id001
+- id: wiktionary-en-full-u-z
+  logical_id: wiktionary-en-full
+  title: English Wiktionary Full — U–Z
+  description: Full English Wiktionary shard for U–Z; install all seven shards for complete coverage.
+  source_language: en
+  definition_language: en
+  license: CC-BY-SA-4.0
+  enabled: true
+  groups:
+  - large
+  - english
+  - wiktionary
+  - english-full
+  smoke_tests: []
+  shard:
+    index: 6
+    count: 7
+    label: U–Z
+  headword_shard:
+    initials: uvwxyz
+  source: *id001
+- id: wiktionary-en-full-other
+  logical_id: wiktionary-en-full
+  title: English Wiktionary Full — Other initials
+  description: Full English Wiktionary shard for Other initials; install all seven shards for complete coverage.
+  source_language: en
+  definition_language: en
+  license: CC-BY-SA-4.0
+  enabled: true
+  groups:
+  - large
+  - english
+  - wiktionary
+  - english-full
+  smoke_tests: []
+  shard:
+    index: 7
+    count: 7
+    label: Other initials
+  headword_shard:
+    other: true
+  source: *id001
+- id: wiktionary-es-es
+  title: Spanish Wiktionary Native
+  description: Spanish headwords with Spanish-language definitions.
+  source_language: es
+  definition_language: es
+  license: CC-BY-SA-4.0
+  enabled: true
+  groups:
+  - native
+  - wiktionary
+  smoke_tests:
+  - libro
+  source:
+    type: wiktionary
+    url: https://kaikki.org/dictionary/downloads/es/es-extract.jsonl.gz
+    homepage: https://kaikki.org/dictionary/rawdata.html
+- id: wiktionary-fr-fr
+  title: French Wiktionary Native
+  description: French headwords with French-language definitions.
+  source_language: fr
+  definition_language: fr
+  license: CC-BY-SA-4.0
+  enabled: true
+  groups:
+  - native
+  - wiktionary
+  smoke_tests:
+  - livre
+  source:
+    type: wiktionary
+    url: https://kaikki.org/dictionary/downloads/fr/fr-extract.jsonl.gz
+    homepage: https://kaikki.org/dictionary/rawdata.html
+- id: wiktionary-de-de
+  title: German Wiktionary Native
+  description: German headwords with German-language definitions.
+  source_language: de
+  definition_language: de
+  license: CC-BY-SA-4.0
+  enabled: true
+  groups:
+  - native
+  - wiktionary
+  smoke_tests:
+  - Buch
+  source:
+    type: wiktionary
+    url: https://kaikki.org/dictionary/downloads/de/de-extract.jsonl.gz
+    homepage: https://kaikki.org/dictionary/rawdata.html
+- id: wiktionary-tr-tr
+  title: Turkish Wiktionary Native
+  description: Turkish headwords with Turkish-language definitions.
+  source_language: tr
+  definition_language: tr
+  license: CC-BY-SA-4.0
+  enabled: true
+  groups:
+  - native
+  - wiktionary
+  smoke_tests:
+  - kitap
+  source:
+    type: wiktionary
+    url: https://kaikki.org/dictionary/downloads/tr/tr-extract.jsonl.gz
+    homepage: https://kaikki.org/dictionary/rawdata.html
+- id: freedict-eng-ara
+  title: English–Arabic FreeDict
+  description: Bilingual English-to-Arabic translation dictionary.
+  source_language: en
+  definition_language: ar
+  license: Per-dictionary FreeDict licence
+  enabled: true
+  groups:
+  - bilingual
+  - freedict
+  smoke_tests: []
+  source:
+    type: freedict
+    dictionary_id: eng-ara
+    repository: https://github.com/freedict/fd-dictionaries.git
+    ref: master
+    mode: git
+- id: freedict-ara-eng
+  title: Arabic–English FreeDict
+  description: Bilingual Arabic-to-English translation dictionary.
+  source_language: ar
+  definition_language: en
+  license: Per-dictionary FreeDict licence
+  enabled: true
+  groups:
+  - bilingual
+  - freedict
+  smoke_tests: []
+  source:
+    type: freedict
+    dictionary_id: ara-eng
+    repository: https://github.com/freedict/fd-dictionaries.git
+    ref: master
+    mode: git
+- id: freedict-eng-hin
+  title: English–Hindi FreeDict
+  description: Bilingual English-to-Hindi translation dictionary.
+  source_language: en
+  definition_language: hi
+  license: Per-dictionary FreeDict licence
+  enabled: true
+  groups:
+  - bilingual
+  - freedict
+  smoke_tests: []
+  source:
+    type: freedict
+    dictionary_id: eng-hin
+    repository: https://github.com/freedict/fd-dictionaries.git
+    ref: master
+    mode: git
+- id: freedict-eng-spa
+  title: English–Spanish FreeDict
+  description: Bilingual English-to-Spanish translation dictionary.
+  source_language: en
+  definition_language: es
+  license: Per-dictionary FreeDict licence
+  enabled: true
+  groups:
+  - bilingual
+  - freedict
+  smoke_tests: []
+  source:
+    type: freedict
+    mode: generated
+    dictionary_id: eng-spa
+    base_url: https://download.freedict.org/generated/eng-spa
+    homepage: https://download.freedict.org/generated/eng-spa/
+- id: freedict-spa-eng
+  title: Spanish–English FreeDict
+  description: Bilingual Spanish-to-English translation dictionary.
+  source_language: es
+  definition_language: en
+  license: Per-dictionary FreeDict licence
+  enabled: true
+  groups:
+  - bilingual
+  - freedict
+  smoke_tests: []
+  source:
+    type: freedict
+    dictionary_id: spa-eng
+    repository: https://github.com/freedict/fd-dictionaries.git
+    ref: master
+    mode: git
+- id: freedict-eng-fra
+  title: English–French FreeDict
+  description: Bilingual English-to-French translation dictionary.
+  source_language: en
+  definition_language: fr
+  license: Per-dictionary FreeDict licence
+  enabled: true
+  groups:
+  - bilingual
+  - freedict
+  smoke_tests: []
+  source:
+    type: freedict
+    dictionary_id: eng-fra
+    repository: https://github.com/freedict/fd-dictionaries.git
+    ref: master
+    mode: git
+- id: freedict-fra-eng
+  title: French–English FreeDict
+  description: Bilingual French-to-English translation dictionary.
+  source_language: fr
+  definition_language: en
+  license: Per-dictionary FreeDict licence
+  enabled: true
+  groups:
+  - bilingual
+  - freedict
+  smoke_tests: []
+  source:
+    type: freedict
+    dictionary_id: fra-eng
+    repository: https://github.com/freedict/fd-dictionaries.git
+    ref: master
+    mode: git
+- id: freedict-eng-deu
+  title: English–German FreeDict
+  description: Bilingual English-to-German translation dictionary.
+  source_language: en
+  definition_language: de
+  license: Per-dictionary FreeDict licence
+  enabled: true
+  groups:
+  - bilingual
+  - freedict
+  smoke_tests: []
+  source:
+    type: freedict
+    mode: generated
+    dictionary_id: eng-deu
+    base_url: https://download.freedict.org/generated/eng-deu
+    homepage: https://download.freedict.org/generated/eng-deu/
+- id: freedict-deu-eng
+  title: German–English FreeDict
+  description: Bilingual German-to-English translation dictionary.
+  source_language: de
+  definition_language: en
+  license: Per-dictionary FreeDict licence
+  enabled: true
+  groups:
+  - bilingual
+  - freedict
+  smoke_tests: []
+  source:
+    type: freedict
+    mode: generated
+    dictionary_id: deu-eng
+    base_url: https://download.freedict.org/generated/deu-eng
+    homepage: https://download.freedict.org/generated/deu-eng/
+- id: freedict-eng-tur
+  title: English–Turkish FreeDict
+  description: Bilingual English-to-Turkish translation dictionary.
+  source_language: en
+  definition_language: tr
+  license: Per-dictionary FreeDict licence
+  enabled: true
+  groups:
+  - bilingual
+  - freedict
+  smoke_tests: []
+  source:
+    type: freedict
+    dictionary_id: eng-tur
+    repository: https://github.com/freedict/fd-dictionaries.git
+    ref: master
+    mode: git
+- id: freedict-tur-eng
+  title: Turkish–English FreeDict
+  description: Bilingual Turkish-to-English translation dictionary.
+  source_language: tr
+  definition_language: en
+  license: Per-dictionary FreeDict licence
+  enabled: true
+  groups:
+  - bilingual
+  - freedict
+  smoke_tests: []
+  source:
+    type: freedict
+    dictionary_id: tur-eng
+    repository: https://github.com/freedict/fd-dictionaries.git
+    ref: master
+    mode: git

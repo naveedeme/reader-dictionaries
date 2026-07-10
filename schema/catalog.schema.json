@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/naveedeme/reader-dictionaries/schema/catalog.schema.json",
+  "title": "Reader offline dictionary catalog",
+  "type": "object",
+  "required": [
+    "catalogVersion",
+    "generatedAt",
+    "repository",
+    "latestCatalogUrl",
+    "packs"
+  ],
+  "properties": {
+    "catalogVersion": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "generatedAt": {
+      "type": "string"
+    },
+    "repository": {
+      "type": "string"
+    },
+    "latestReleaseTag": {
+      "type": "string"
+    },
+    "latestCatalogUrl": {
+      "type": "string",
+      "format": "uri"
+    },
+    "updatedPackIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "packs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "version",
+          "sourceLanguage",
+          "definitionLanguage",
+          "schemaVersion",
+          "downloadSize",
+          "installedSize",
+          "sha256",
+          "downloadUrl"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "version": {
+            "type": "string"
+          },
+          "sourceLanguage": {
+            "type": "string"
+          },
+          "definitionLanguage": {
+            "type": "string"
+          },
+          "schemaVersion": {
+            "type": "integer"
+          },
+          "downloadSize": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "installedSize": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "downloadUrl": {
+            "type": "string",
+            "format": "uri"
+          },
+          "logicalId": {
+            "type": "string"
+          },
+          "shard": {
+            "type": [
+              "object",
+              "null"
+            ]
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}
